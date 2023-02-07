@@ -27,7 +27,7 @@ def main():
         print("2. List network interfaces")
         print("3. Quit")
 
-        option = int(input("Enter option number: "))
+        option = input("Enter option number: ")
 
         if option == 1:
             interface = input("Enter network interface: ")
