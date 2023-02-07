@@ -21,6 +21,7 @@ def ListInterfaces():
     for i in interfaces:
         print(i)
 
+
 def main():
     while True:
         print("1. Monitor mode (on/off)")
