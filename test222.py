@@ -27,7 +27,11 @@ def main():
         print("2. List network interfaces")
         print("3. Quit")
 
-        option = input("Enter option number: ")
+        try:
+            option = int(input("Enter option number: "))
+        except ValueError:
+            print("Invalid option, please enter a valid number")
+            continue
 
         if option == 1:
             interface = input("Enter network interface: ")
@@ -40,6 +44,7 @@ def main():
             break
         else:
             print("Invalid option, try again")
+
 
 if __name__ == "__main__":
     main()
